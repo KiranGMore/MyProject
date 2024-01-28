@@ -9,10 +9,10 @@ import com.mystore.base.BaseClass;
 
 public class OrderPage extends BaseClass
 {
-     @FindBy(xpath = "//*[@id=\"product_price_1_3_0\"]/li")
+     @FindBy(xpath = "//td[@class='cart_unit']")      ////*[@id="product_price_1_3_2466"]/li
      WebElement unitPrice;
      
-     @FindBy(xpath = "//*[@id=\"total_price\"]")
+     @FindBy(xpath = "//*[@id=\"total_price\"]")    ////*[@id="total_price"]
      WebElement totalPrice;
      
      @FindBy(xpath = "//span[text()='Proceed to checkout']")
